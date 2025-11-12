@@ -6,8 +6,6 @@ import authRoutes from "./routes/authRoutes.js";
 import loginRoutes from "./routes/loginRoutes.js";
 import patientRoutes from "./routes/patientRoutes.js";
 import doctorRoutes from "./routes/doctorRoutes.js";
-import otpRoutes from "./routes/otpRoutes.js";
-
 
 dotenv.config();
 const app = express();
@@ -32,8 +30,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api", loginRoutes);
 app.use("/patient", patientRoutes);
 app.use("/doctor", doctorRoutes);
-app.use("/api", otpRoutes);
-
 
 // ✅ Default Route
 app.get("/", (req, res) => {
