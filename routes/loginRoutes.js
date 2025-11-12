@@ -14,7 +14,7 @@ router.post("/auth/login", async (req, res) => {
     if (!email || !password || !role) {
       return res.status(400).json({ message: "Please provide all fields" });
     }
-z
+
     // User find
     const user = await User.findOne({ email, role });
     if (!user) {
