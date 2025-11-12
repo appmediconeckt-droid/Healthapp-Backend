@@ -2,7 +2,7 @@
 
 ## Base URL
 ```
-https://bhrbtpmf-5000.inc1.devtunnels.ms
+https://healthapp-backend-production-38c4.up.railway.app
 ```
 
 ---
@@ -334,7 +334,7 @@ Content-Type: application/json
 
 ### Doctor Signup
 ```bash
-curl -X POST https://bhrbtpmf-5000.inc1.devtunnels.ms/api/auth/doctor/signup \
+curl -X POST https://healthapp-backend-production-38c4.up.railway.app/api/auth/doctor/signup \
   -H "Content-Type: application/json" \
   -d '{
     "fullName": "Dr. Test",
@@ -347,7 +347,7 @@ curl -X POST https://bhrbtpmf-5000.inc1.devtunnels.ms/api/auth/doctor/signup \
 
 ### Doctor Login
 ```bash
-curl -X POST https://bhrbtpmf-5000.inc1.devtunnels.ms/api/auth/login \
+curl -X POST https://healthapp-backend-production-38c4.up.railway.app/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "doctor@test.com",
@@ -358,7 +358,7 @@ curl -X POST https://bhrbtpmf-5000.inc1.devtunnels.ms/api/auth/login \
 
 ### Get Dashboard (Use token from login)
 ```bash
-curl -X GET https://bhrbtpmf-5000.inc1.devtunnels.ms/doctor/dashboard \
+curl -X GET https://healthapp-backend-production-38c4.up.railway.app/doctor/dashboard \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json"
 ```
